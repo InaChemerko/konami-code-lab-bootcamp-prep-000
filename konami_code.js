@@ -8,6 +8,7 @@ document.body.addEventListener('keydown', function (e){
   
   if (key === code[index]){
     index++;
+    
     if (index === code.length){
       alert ("Congratulations!!!");
       index = 0;
@@ -15,6 +16,6 @@ document.body.addEventListener('keydown', function (e){
   } else {
     index = 0;
   }
-  
+  e.preventDefault();
 })
 }
