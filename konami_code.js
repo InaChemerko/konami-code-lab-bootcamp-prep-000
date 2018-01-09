@@ -5,10 +5,11 @@ function init() {
  var index = 0;
 document.body.addEventListener('keydown', function (e){
   const key = parseInt(e.detail || e.which);
+  console.log(key);
   
   if (key === code[index]){
     index++;
-    
+    console.log(key);
     if (index === code.length){
       alert ("Congratulations!!!");
       index = 0;
